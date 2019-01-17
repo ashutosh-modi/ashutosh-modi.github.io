@@ -9,6 +9,8 @@ div {
 img{
     float: left;
     margin-right: 20px;
+    margin-top: 50px;
+    margin-below: 50px;
     clear:both;
 }
 nav ul, footer ul {
