@@ -8,7 +8,7 @@ div {
 }
 .column {
   float: left;
-  width: 70%;
+  width: 50%;
   padding: 20px;
 }
 /* Clear floats after the columns */
