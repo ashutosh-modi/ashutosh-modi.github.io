@@ -22,7 +22,6 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-    margin-left: 120px;
 }
 a {
     text-decoration: none;
@@ -39,7 +38,7 @@ p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
-    margin-left: 0px;
+    margin-left: 200px;
     overflow:auto;
     display:block;
 }
