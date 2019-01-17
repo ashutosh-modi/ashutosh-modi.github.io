@@ -24,14 +24,14 @@ nav ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
+nav a {
     text-decoration: none;
     color: white;
 }
-a:hover {
+nav a:hover {
     text-decoration: underline;
 }
-.active {
+nav .active {
   background-color: #4CAF50;
 }
 footer ul {
@@ -43,6 +43,10 @@ footer ul {
 footer ul li {
     display: inline;
     margin-right: 0px;
+}
+footer a {
+    text-decoration: none;
+    color: #999;
 }
 h1 {
     font-size: 3em;
