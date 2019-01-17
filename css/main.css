@@ -19,7 +19,7 @@ nav ul {
     list-style: none;
     font-weight: bold;
     background-color: #4CAF50;
-    height: 40px;
+    height: 30px;
 }
 nav ul li {
     display: inline;
@@ -27,6 +27,7 @@ nav ul li {
 }
 nav a {
     text-decoration: none;
+    text-align: center;
     color: white;
 }
 nav a:hover {
