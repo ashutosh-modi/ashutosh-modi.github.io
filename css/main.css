@@ -19,14 +19,15 @@ nav ul {
     list-style: none;
     font-weight: bold;
     background-color: #4CAF50;
-    height: 30px;
+    height: 25px;
 }
 nav ul li {
-    display: block;
+    display: inline;
     margin-right: 20px;
 }
 nav a {
     text-decoration: none;
+    padding: 14px 16px;
     text-align: center;
     color: white;
 }
