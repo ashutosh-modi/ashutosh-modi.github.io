@@ -27,7 +27,7 @@ nav ul li {
 nav a {
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: black;
 }
 nav a:hover {
     text-decoration: underline;
