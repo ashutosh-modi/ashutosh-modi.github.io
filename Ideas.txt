@@ -1,0 +1,4 @@
+Ideas for the website:
+
+1. GEEK Section: Unix command line tools
+2. Some cool stuff: Awesome blog posts and links
