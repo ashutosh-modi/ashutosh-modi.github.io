@@ -9,6 +9,7 @@ div {
 img{
     float: left;
     margin-right: 20px;
+    margin-top: 10px;
     margin-below: 50px;
     clear:both;
 }
