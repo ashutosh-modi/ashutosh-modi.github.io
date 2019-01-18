@@ -19,6 +19,7 @@ nav ul {
     list-style: none;
     font-weight: bold;
     height: 25px;
+    background-color: #4CAF50;
 }
 nav ul li {
     display: inline;
