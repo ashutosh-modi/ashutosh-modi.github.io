@@ -18,9 +18,8 @@ nav ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    height: 25px;
+    height: 20px;
     background-color: #4CAF50;
-    text-align: center;
 }
 nav ul li {
     display: inline;
