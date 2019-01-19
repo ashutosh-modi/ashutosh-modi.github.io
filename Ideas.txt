@@ -4,3 +4,5 @@ Ideas for the website:
 2. Some cool stuff: Awesome blog posts and links
 
 3. Brief Bio
+
+4. Have a check when pressing email
