@@ -10,3 +10,11 @@ Ideas for the website:
 5. Word Phrase Cloud for my research or Zipf distribution for my research (https://www.displayr.com/alternatives-word-cloud/), may be also show effect over time
 
 6. Put past associations with different organizations and current affiliations
+
+
+
+Spacing:
+
+Single Space: &nbsp;
+Two spaces: &ensp;
+Four spaces: &emsp;
