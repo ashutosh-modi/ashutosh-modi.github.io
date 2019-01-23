@@ -13,6 +13,8 @@ Ideas for the website:
 
 7. Fun section with a map with cities visited marked
 
+8. News/Updates section sth like this: http://www.cs.cornell.edu/gomes/press.php
+
 Spacing:
 
 Single Space: &nbsp;
