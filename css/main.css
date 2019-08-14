@@ -20,6 +20,7 @@ nav ul {
     font-weight: bold;
     height: 56px;
     background-color: #4CAF50;
+    text-align: center;
 }
 nav ul li {
     display: inline;
