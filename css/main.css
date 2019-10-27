@@ -78,3 +78,7 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.nobr { 
+    white-space:nowrap; 
+}
