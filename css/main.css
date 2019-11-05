@@ -16,6 +16,7 @@ img{
 nav ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
+    text-align:center;
     list-style: none;
     font-weight: bold;
     height: 48px;
