@@ -62,10 +62,19 @@ p {
     font-size: 1.3em;
     line-height: 1.2em;
     color: #333;
+    overflow:auto;
+    display:block;
+}
+/*
+p {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    color: #333;
     margin-left: 220px;
     overflow:auto;
     display:block;
 }
+*/
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
