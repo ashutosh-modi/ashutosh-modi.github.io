@@ -71,6 +71,34 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 } 
+
+/* ######################### */ 
+/* Collapsible */
+/* https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+.collapsible {
+  background-color: white; /* #4CAF50; #777;*/
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 70px;/*15%;*/
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+}
+
+.active, .collapsible:hover {
+  background-color: orange;/*#555;*/
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-size: 13px;
+}
  
 </style>
 </head>
@@ -204,10 +232,15 @@ Virtual classes will be held on <a href = "https://www.microsoft.com/en-in/micro
 
 <div id="projects" class="tabcontent">
   <!-- <h3 style="color: orange;">Projects</h3> -->
-  
-  <h4 style="color: green;">Projects list coming up soon</h4>
+ <!--  <h4 style="color: green;">Projects list coming up soon</h4> -->
+  <br>
+ This is a project oriented course. Participants will be working on different NLP research projects. Once the projects have been finalized by the participants, this page will be populated with the list of projects. 
   
 </div>  
+
+<!-- ###########################################    SCRIPTS    ##################################################  -->
+<!-- ##################################################  -->
+<!-- Tab Java Script -->
 
 <script>
 function pub(evt, type) {
@@ -224,7 +257,29 @@ function pub(evt, type) {
   evt.currentTarget.className += " active";
 }
 </script>
-   
+
+<!-- ##################################################  -->
+<!-- Collapsible Java Script -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- ##################################################  -->
+
 </body>
 </html> 
 
