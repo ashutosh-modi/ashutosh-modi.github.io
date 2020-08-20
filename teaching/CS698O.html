@@ -78,15 +78,15 @@ tr:nth-child(even) {
 /* https://www.w3schools.com/howto/howto_js_collapsible.asp */
 
 .collapsible {
-  background-color: #4CAF50; /*#777;*/
+  background-color: white; /* #4CAF50; #777;*/
   color: black;
   cursor: pointer;
-  padding: 10px;
-  width: 90px;/*15%;*/
+  padding: 5px;
+  width: 70px;/*15%;*/
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .active, .collapsible:hover {
@@ -98,6 +98,7 @@ tr:nth-child(even) {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+  font-size: 13px;
 }
 
 </style>
@@ -390,13 +391,23 @@ The course will be a managed via <a href="piazza.com/indian_institute_of_technol
   
   <h4 style="color: green;">Projects list coming up soon</h4> <br>
  
- <h4 style="color: blue;"> Commonsense Validation and Explanation </h4> <br>
+<!-- *************************************** -->
+ 
+<!-- <h4 style="color: blue;"> Commonsense Validation and Explanation </h4> 
+ <font color="blue"> <b> Commonsense Validation and Explanation </b></font> <br>
  Sandeep Routray, Soumya Ranjan Dash, Prateek Varshney <br>
+ <a href="https://arxiv.org/abs/2007.10830"> PAPER </a>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ -->
+ <font color="blue"> <b> Commonsense Validation and Explanation </b></font><br>
+Sandeep Routray, Soumya Ranjan Dash, Prateek Varshney <br>
+<a href="https://arxiv.org/abs/2007.10830"><tt><b>PAPER</b></tt></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
  <button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
 <div class="content">
   <p>In this project, we develop a system for Task 4 of SemEval 2020, which involves differentiating between natural language statements that confirm to common sense and those that do not. The organizers propose three subtasks - first, selecting between two sentences, the one which is against common sense. Second, identifying the most crucial reason why a statement does not make sense. Third, generating novel reasons for explaining the against common sense statement. Out of the three subtasks, this paper reports the system description of subtask A and subtask B. This paper proposes a model based on transformer neural network architecture for addressing the subtasks. The novelty in work lies in the architecture design, which handles the logical implication of contradicting statements and simultaneous information extraction from both sentences. We use a parallel instance of transformers, which is responsible for a boost in the performance. We achieved an accuracy of 94.8% in subtask A and 89% in subtask B on the test set. </p>
-</div> &emsp &emsp &emsp <a href="https://arxiv.org/abs/2007.10830"> PAPER </a>
-  
+</div>
+ 
+<!-- *************************************** -->
+ 
 </div>  
 
 <!-- ###########################################    SCRIPTS    ##################################################  -->
