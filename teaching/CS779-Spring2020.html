@@ -1,0 +1,334 @@
+---
+layout: default
+title: Ashutosh Modi
+---
+ <!-- source: https://www.w3schools.com/howto/howto_js_tabs.asp -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: orange;/*#ddd;*/
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: orange;/*#ccc;*/
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*
+.tab > div {
+  display:none;  
+}
+.tab > div:target {
+  display:block;  
+}
+*/
+ 
+/* Tables */
+/* https://www.w3schools.com/html/html_tables.asp */ 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  background-color: #4CAF50;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+} 
+
+/* ######################### */ 
+/* Collapsible */
+/* https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+.collapsible {
+  background-color: white; /* #4CAF50; #777;*/
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 70px;/*15%;*/
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+}
+
+.active, .collapsible:hover {
+  background-color: orange;/*#555;*/
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-size: 13px;
+}
+ 
+</style>
+</head>
+<body>
+
+<!-- 
+<h2>Tabs</h2>
+-->
+<h2 style="color: orange;"> Statistical Natural Language Processing (CS779) : Fall 2020 </h2>
+
+Natural  language  (NL)  refers  to  the  language  spoken/written  by  humans.   NL  is  the  primary  mode  of communication for humans.  With the growth of the world wide web, data in the form of text has grown exponentially.  It calls for the development of algorithms and techniques for processing natural language for the automation and development of intelligent machines.  This course will primarily focus on understanding and  developing  linguistic  techniques,  statistical  learning  algorithms,  and  models  for  processing  language. We  will  have  a  statistical  approach  towards  natural  language  processing,  wherein  we  will  learn  how  one could develop natural language understanding models from statistical regularities in large corpora of natural language texts while leveraging linguistics theories. </br>
+</br>
+<!-- CS779 is a research project based course, participants are required to work on open and unsolved research problems in NLP and consequently considerable effort is expected from the participant. --> <!-- As in the previous offering of the course, work on the project can possibly lead to a publication. -->
+</br> </br>
+
+<div class="tab">
+  <button class="tablinks" onclick="pub(event, 'logistics')"> <font style="color: blue;"> Information and Logistics </font></button>
+  <button class="tablinks" onclick="pub(event, 'lectures')"> <font style="color: blue;"> Syllabus and Lectures </font></button>	
+  <button class="tablinks" onclick="pub(event, 'projects')"> <font style="color: blue;"> Projects </font></button>	
+ <button class="tablinks" onclick="pub(event, 'resources')"> <font style="color: blue;"> Resources </font></button>	
+</div>
+
+<!-- ############################################################################################################### -->
+<!-- Logistics -->
+<div id="logistics" class="tabcontent">
+  <!-- <h3 style="color: orange;"> Information and Logistics</h3> -->
+
+<h4 style="color: orange;"> Pre-requisites:</h4>
+
+        <b> Must: </b> Introduction to Machine Learning (CS771) or equivalent course, Proficiency in Linear Algebra, Probability and Statistics, Proficiency in Python Programming <br>
+
+        <b> Desirable: </b> Probabilistic Machine Learning (CS772), Topics in Probabilistic Modeling and Inference (CS775), Deep Learning for Computer Vision (CS776)
+
+
+<h4 style="color: orange;"> Course Instructor: </h4>  <a href = "https://ashutosh-modi.github.io/"> Dr. Ashutosh Modi</a> 
+
+<h4 style="color: orange;"> Course TAs: </h4>
+ 
+            Samik Some (Email:  <a href = "mailto:samik@cse.iitk.ac.in?subject = Feedback&body = Message"> samik@cse.iitk.ac.in </a> ) <br>
+            Shubham Kumar Nigam (Email:  <a href = "mailto:sknigam@cse.iitk.ac.in?subject = Feedback&body = Message"> sknigam@cse.iitk.ac.in </a> ) <br>
+            Tushar Shandhilya (Email:  <a href = "mailto:stushar@cse.iitk.ac.in?subject = Feedback&body = Message"> stushar@cse.iitk.ac.in </a> ) <br>
+            Karishma Satchidanand Laud (Email:  <a href = "mailto:kslaud@iitk.ac.in?subject = Feedback&body = Message"> kslaud@iitk.ac.in </a> ) <br>
+            Gargi Singh (Email:  <a href = "mailto:sgargi@cse.iitk.ac.in?subject = Feedback&body = Message"> sgargi@cse.iitk.ac.in </a> ) <br>
+            Chayan Dhaddha (Email:  <a href = "mailto:cdhaddha@cse.iitk.ac.in?subject = Feedback&body = Message"> cdhaddha@cse.iitk.ac.in </a> ) <br>
+            Ashwani Bhat (Email:  <a href = "mailto:bashwani@cse.iitk.ac.in?subject = Feedback&body = Message"> bashwani@cse.iitk.ac.in </a> ) <br>
+
+<h4 style="color: orange;"> Course Email: </h4>
+
+        In  case  you  want  to  communicate  with  the  instructor,  please  do  not  send  any  direct emails to the instructor (these will most likely end in spam), use this course email for the communication: <a href = "mailto:nlp.course.iitk@gmail.com ?subject = Feedback&body = Message"> nlp.course.iitk@gmail.com </a>
+
+<h4 style="color: orange;"> Weekly Meeting Session: </h4> Monday 3:30PM to 5PM
+
+<h4 style="color: orange;"> Virtual Classroom:</h4> 
+
+Lectures, assignments and quizzes will be uploaded/conducted on <a href="https://hello.iitk.ac.in/">HelloIITK</a>. <br><br>
+
+Virtual classes will be held on <a href = "https://www.microsoft.com/en-in/microsoft-365/microsoft-teams/group-chat-software"> MS Teams</a>. A separate team/channel <a href="https://teams.microsoft.com/l/team/19%3a7f0d2fd5d5e148c4b081a1a0257f1910%40thread.tacv2/conversations?groupId=15647036-7fd4-4acc-b7cd-f4dcf597d30d&tenantId=9ebcd82b-3a71-49bf-891e-86d819a0911c">(CS779:  Statistical Natural Language Processing)</a> has been set up for the course. <span style="color: blue;">All course announcements will be made on the Teams channel, HelloIITK and Telegram.</span> <br> <br>
+ 
+ In case you are not there on MS Teams please create an account via IITK subscription. To get IITK sub-scription  please  fill  this  form: <a href="https://web.iitk.ac.in/ccnew/Office365/Office_365_subscription_at_IITK.htm">https://web.iitk.ac.in/ccnew/Office365/Office_365_subscription_at_IITK.htm</a>. If you are outside IITK, you  would  need  to  log  into  IITK  network  via  VPN  to  fill  the  form.   Once  you  have  the  account,  please contact TAs to add you to the Teams channel.<br>
+
+<h4 style="color: orange;"> Resources:</h4> 
+Please check the <span style="color: blue;">Resources</span> tab. 
+<!-- Please check the <a href="#resources">Resources</a> tab.  --> 
+
+<h4 style="color: orange;"> Grading: </h4>
+
+        This is a research project oriented course and the project carries the maximum weightage.  Given that course is going to be online, all exams will be conducted online. The tentative weightage for different components are as follows.  Please note that this grading scheme is tentative (due to COVID uncertainties and factors beyond Instructor’s control), and weightage might change. <br><br>
+        Quizzes:  20% <br>
+        Scribe Notes and Cheat Sheets: 20% <br>
+        Project:  60% <br>
+        Mid-Sem Exam:  Project paper and presentation <br>
+        End-Sem Exam:  Project paper and presentation <br>
+
+</br></br>
+
+</div>
+
+<!-- ############################################################################################################### -->
+<!-- Syllabus -->
+
+<div id="lectures" class="tabcontent">
+<!--   <h3 style="color: orange;">Syllabus and Lectures</h3> -->
+  
+ <h4 style="color: orange;"> Lectures </h3>
+ 
+ <table>
+  <tr>
+    <th>Date</th>
+    <th>Topic</th>
+    <th>References</th>
+  </tr>
+  <tr>
+    <td>01/09/2020</td>
+    <td>Introduction and Logistics</td>
+    <td>-</td>
+  </tr>
+</table>
+<br> <br>
+ 
+  <h4 style="color: orange;"> Course Contents: </h4>
+
+   Tentative list of topics we will be covering in this course: 
+   
+        <ol>
+          <li> Introduction to Natural Language (NL): why is it hard to process NL, linguistics fundamentals, etc.</li>
+          <li> Language Models:  n-grams, smoothing, class-based, brown clustering</li>
+          <li> Sequence Labeling:  HMM, MaxEnt, CRFs, related applications of these models e.g.  Part of Speech tagging, etc.</li>
+          <li> Parsing:  CFG, Lexicalized CFG, PCFGs, Dependency parsing</li>
+          <li>Applications:   Named  Entity  Recognition,  Coreference  Resolution,  text  classification,  toolkits  e.g., Spacy, etc.</li>
+          <li>Distributional Semantics:  distributional hypothesis, vector space models, etc.</li>
+          <li>Distributed Representations: Neural Networks (NN), Backpropogation, Softmax, Hierarchical Softmax</li>
+          <li> Word Vectors:  Feedforward NN, Word2Vec, GloVE, Contextualization (ELMo etc.), Subword information (FastText, etc.)</li>
+          <li>Deep Models:  RNNs, LSTMs, Attention, CNNs, applications in language, etc.</li>
+          <li>Sequence to Sequence models:  machine translation and other applications</li>
+          <li>Transformers:  BERT, transfer learning and applications</li>
+        </ol>
+
+
+        <h4 style="color: orange;"> References: </h4> 
+ There are no specific references, this course gleans information from a variety of sources likebooks, research papers, other courses, etc.  Relevant references would be suggested in the lectures.  Some of the frequent references are as follows:
+
+       <ol>
+          <li> Speech and Language Processing, Daniel Jurafsky, James H.Martin</li>
+          <li>  Foundations of Statistical Natural Language Processing, CH Manning, H Schtze</li>
+          <li> Introduction to Natural Language Processing, Jacob Eisenstein</li>
+          <li> Neural Network Methods for NLP, Yoav Goldberg, Morgan Claypool (If you are in IITK network you can download at: <a href="https://tinyurl.com/y53ulmt2"> Morgan Claypool Subscription for IITK</a> ) </li>
+        <li> Linguistic Fundamentals for Natural Language Processing, Emily Bender, Morgan Claypool  (If you are in IITK network you can download at: <a href="https://tinyurl.com/y53ulmt2"> Morgan Claypool Subscription for IITK</a> ) </li>
+          <li>  Natural Language Understanding, James Allen</li>
+        </ol> 
+
+</div>  
+
+<!-- ############################################################################################################### -->
+<!-- Projects -->
+
+<div id="projects" class="tabcontent">
+  <!-- <h3 style="color: orange;">Projects</h3> -->
+ <!--  <h4 style="color: green;">Projects list coming up soon</h4> -->
+  <br>
+ This is a project oriented course. Participants will be working on different NLP research projects. Once the projects have been finalized by the participants, this page will be populated with the list of projects. 
+  
+</div>  
+
+<!-- ############################################################################################################### -->
+<!-- Resources -->
+<div id="resources" class="tabcontent">
+<a id="resources-tab"> </a>
+<h4 style="color: orange;"> Course Logistics Related Resources:</h4>
+
+ <ol>
+          <li> Course lectures, assignments and quizzes will be on <a href="https://hello.iitk.ac.in/">HelloIITK</a>. Log in using your IITK username and password. </li>
+          <li> Course MS Teams Channel: <a href="https://teams.microsoft.com/l/team/19%3a7f0d2fd5d5e148c4b081a1a0257f1910%40thread.tacv2/conversations?groupId=15647036-7fd4-4acc-b7cd-f4dcf597d30d&tenantId=9ebcd82b-3a71-49bf-891e-86d819a0911c">CS779:  Statistical Natural Language Processing</a> </li>
+          <li> <a href="https://telegram.org/">Telegram</a> Channel: <a href="https://t.me/joinchat/AAAAAEVRj7_KxNnBPA8tFg
+"> CS779_Fall_2020</a></li>
+          <li> <a href="https://tinyurl.com/y26onzmh">Projects List and Registration</a></li>
+         <li><a href="https://tinyurl.com/y3p9ftfg">Scribe Notes and Cheatsheet Guidelines</a> </li>
+         <li><a href="https://drive.google.com/file/d/1hZfSGls4fzIlq4mdc9YVGu1lk8SmyUsU/view?usp=sharing"> Project Paper Template</a></li>
+        </ol> 
+
+<h4 style="color: orange;"> Study Resources:</h4>
+ <ol>
+          <li> <a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Linear Algebra Refresher</a></li>
+          <li> <a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Probability Refresher</a></li>
+          <li> <a href="https://pytorch.org/tutorials/">PyTorch Tutorials</a></li>
+          <li> <a href="https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf">Deep Learning with PyTorch Book</a></li>
+           <li> <a href="https://spacy.io/">Spacy ToolKit</a></li>
+           <li> <a href="https://github.com/allenai/writing-code-for-nlp-research-emnlp2018/blob/master/writing_code_for_nlp_research.pdf">Writing Code for NLP Research</a></li> 
+           <li> Repository of NLP research papers: <a href="https://www.aclweb.org/anthology/">ACL Anthology</a></li>
+           <li> <a href="https://tinyurl.com/y53ulmt2">Human Language Technology Series by Morgan Claypool</a>. This can be accessed only from the IITK network.</li>
+           <li> <a href="http://joschu.net/blog/opinionated-guide-ml-research.html">Guide to ML Research</a></li>
+           <li> <a href="https://colab.research.google.com/notebooks/intro.ipynb">Using Google CoLab for research</a></li>
+           <li> <a href="https://www.kaggle.com/docs/notebooks">Using Kaggle Notebooks for research</a></li>
+        </ol> 
+
+ 
+</div>
+<!-- ############################################################################################################### -->
+
+<!-- ###########################################    SCRIPTS    ##################################################  -->
+<!-- ##################################################  -->
+<!-- Tab Java Script -->
+
+<script>
+function pub(evt, type) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(type).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!-- ##################################################  -->
+<!-- Collapsible Java Script -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- ##################################################  -->
+
+</body>
+</html> 
+
+</br> </br> </br> </br>
