@@ -53,13 +53,6 @@
 
 <script>
   	monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
-	n =  new Date();
-	y = n.getFullYear();
-	m = n.getMonth();
-	d = n.getDate();
-	date = d + " " + m +  " " + y;
-	document.getElementById("date").innerHTML = date
-	
   	var x = document.lastModified;
 	x = x.split(" ")[0]
   	x = x.split("/")
@@ -69,3 +62,11 @@
   	document.getElementById("lastUpdate").innerHTML = d + " " + m + " " + y ;
 </script>
 
+<!-- 
+n =  new Date();
+	y = n.getFullYear();
+	m = n.getMonth();
+	d = n.getDate();
+	date = d + " " + m +  " " + y;
+	document.getElementById("date").innerHTML = date
+-->
