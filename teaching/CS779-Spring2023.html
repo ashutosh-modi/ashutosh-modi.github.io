@@ -1,0 +1,536 @@
+---
+layout: default
+title: Ashutosh Modi
+---
+ <!-- source: https://www.w3schools.com/howto/howto_js_tabs.asp -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: orange;/*#ddd;*/
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: orange;/*#ccc;*/
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* ######################### */ 
+/* Tables */
+/* https://www.w3schools.com/html/html_tables.asp */ 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  background-color: #4CAF50;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+} 
+ 
+/* ######################### */ 
+/* Collapsible */
+/* https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+.collapsible {
+  background-color: white; /* #4CAF50; #777;*/
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 70px;/*15%;*/
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+}
+
+.active, .collapsible:hover {
+  background-color: orange;/*#555;*/
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-size: 13px;
+}
+
+</style>
+</head>
+<body>
+
+<!--  ######################### -->
+
+<!-- 
+<h2>Tabs</h2>
+-->
+<h2 style="color: orange;"> Statistical Natural Language Processing (CS779) : Spring 2023 </h2>
+  
+Natural language (NL) refers to the language spoken/written by humans. NL is the primary mode of communication for humans. With the growth of the world wide web, data in the form of text has grown exponentially. It calls for the development of algorithms and techniques for processing natural language for the automation and development of intelligent machines. This course will primarily focus on understanding and developing linguistic techniques, statistical learning algorithms and models for processing language. We will have a statistical approach towards natural language processing, wherein we will learn how one could develop natural language understanding models from statistical regularities in large corpora of natural language texts while leveraging linguistics theories.
+  
+</br> </br>
+
+<div class="tab">
+  <button class="tablinks" onclick="pub(event, 'logistics')"> <font style="color: blue;"> Information and Logistics </font></button>
+  <button class="tablinks" onclick="pub(event, 'lectures')"> <font style="color: blue;"> Syllabus and Lectures </font></button>	
+  <button class="tablinks" onclick="pub(event, 'projects')"> <font style="color: blue;"> Projects </font></button>	
+</div>
+
+<!-- ############################################################################################################### -->
+
+<!-- Logistics -->
+<div id="logistics" class="tabcontent">
+  <!-- <h3 style="color: orange;"> Information and Logistics</h3> -->
+
+<h4 style="color: orange;"> Pre-requisites:</h4>
+
+        <b> Must: </b> Proficiency in Linear Algebra, Probability and Statistics, Proficiency in Python Programming <br>
+
+        <b> Desirable: </b> Introduction to Machine Learning (CS771) or Probabilistic Machine Learning (CS772) or Topics in Probabilistic Modeling and Inference (CS775) or equivalent course.
+
+
+<h4 style="color: orange;"> Course Instructor: </h4>  <a href = "https://ashutosh-modi.github.io/"> Dr. Ashutosh Modi</a> 
+
+<h4 style="color: orange;"> Course TAs: </h4>
+ 
+            Alok Kumar Trivedi (Email:  <a href = "mailto:alokt@cse.iitk.ac.in?subject = Feedback&body = Message"> alokt@cse.iitk.ac.in </a> ) <br>
+            Amar Raja Dibbu (Email:  <a href = "mailto:amard@cse.iitk.ac.in?subject = Feedback&body = Message"> amard@cse.iitk.ac.in </a> ) <br>
+            Chabil Kansal (Email:  <a href = "mailto:chabilk@cse.iitk.ac.in?subject = Feedback&body = Message"> chabilk@cse.iitk.ac.in </a> ) <br>
+            Rahul Kumar (Email:  <a href = "mailto:rahulkumar@cse.iitk.ac.in?subject = Feedback&body = Message"> rahulkumar@cse.iitk.ac.in </a> ) <br>
+            Tanikella Sai Kiran (Email:  <a href = "mailto:tskiran@iitk.ac.in?subject = Feedback&body = Message"> tskiran@iitk.ac.in </a> ) <br>
+            
+<h4 style="color: orange;"> Course Email: </h4>
+
+        In  case  you  want  to  communicate  with  the  instructor,  please  do  not  send  any  direct emails to the instructor (these will most likely end in spam), use this course email for the communication: <a href = "mailto:nlp.course.iitk@gmail.com ?subject = Feedback&body = Message"> nlp.course.iitk@gmail.com </a>
+
+<h4 style="color: orange;"> Weekly Sessions: </h4> 
+Tuesday 1200 -1315 Hrs <br>
+Wednesday 1200 -1315 Hrs <br>
+
+<h4 style="color: orange;"> Lecture Venue: </h4>
+<a href = "https://goo.gl/maps/AVgx49xBfHyA3BGN8"> CSE Dept., KD101 </a>
+
+<h4 style="color: orange;"> Course Annoucements: </h4>
+The course will be managed via <a href="https://cs779snlp.slack.com/">Slack</a>. Please sign-up on <a href="https://cs779snlp.slack.com/">Slack</a> for course annoucements, study material, and resources. For joining the workspace, please contact the instructor or one of the TAs. 
+
+<h4 style="color: orange;"> Tentative Grading: </h4>
+
+        This is a research project oriented course and the project carries the maximum weightage.  The tentative weightage for different components are as follows. <br><br>
+        Class Participation: 3% <br>
+        Quizzes/Exams:  7% <br>
+        NLP Challenge: 20% <br>
+        Project:  70% <br>
+</br></br>
+
+
+</div>
+
+<!-- ############################################################################################################### -->
+<!-- Syllabus -->
+
+<div id="lectures" class="tabcontent">
+<!--   <h3 style="color: orange;">Syllabus and Lectures</h3> -->
+  
+ <h4 style="color: orange;"> Lectures </h3>
+ 
+ <table>
+  <tr>
+    <th>Date</th>
+    <th>Topic</th>
+    <!-- <th>References</th> -->
+  </tr>
+  <!-- Lecture 1 -->
+  <tr>
+    <td>10/01/2023</td>
+    <td> <a href="https://iitk-my.sharepoint.com/:b:/g/personal/ashutoshm_iitk_ac_in/EUFGX1opG7VIvQZbPEF8rkABf2JZIUBu4ssczkyzakh-wg?e=chwIuM"> Introduction and Logistics </a></td> </br>
+    <td> <a href="https://iitk-my.sharepoint.com/:b:/g/personal/ashutoshm_iitk_ac_in/EXBNKWs7EGlPo6uIUEofkpwBbICqATkv1-7EqqPojzUdhQ?e=1Lcy1d"> Logistics </a></td>
+    <!-- <td>-</td> -->
+  </tr>
+  <!-- Lecture 2 -->
+  <tr>
+    <td>11/01/2023</td>
+    <td> <a href="https://piazza.com/class_profile/get_resource/k4v0nxex5zz62c/k52226g6uvh3ll"> Why NLP is Hard? </a></td>
+    <!-- <td>-</td> -->
+  </tr>
+  <!-- Lecture 3 -->
+  <tr>
+    <td>17/01/2023</td>
+    <td> <a href="https://piazza.com/class_profile/get_resource/k4v0nxex5zz62c/k5531p25llo4v3"> NLP Pipeline</a></td>
+    <!-- <td>-</td> -->
+  </tr>
+  <!-- Lecture 4 -->
+  <tr>
+    <td>18/01/2023</td>
+    <td> <a href="https://piazza.com/class_profile/get_resource/k4v0nxex5zz62c/k5anfatvhtj50x"> Sub-Tokenization </a></td>
+    <!-- <td>-</td> -->
+  </tr>
+</table>
+<br> <br>
+
+<!-- 
+  <h4 style="color: orange;"> Course Contents: </h4>
+   Tentative list of topics we will be covering in this course: 
+   
+        <ol>
+          <li> Introduction to Natural Language (NL): why is it hard to process NL, linguistics fundamentals, etc.</li>
+          <li> Language Models:  n-grams, smoothing, class-based, brown clustering</li>
+          <li> Sequence Labeling:  HMM, MaxEnt, CRFs, related applications of these models e.g.  Part of Speech tagging, etc.</li>
+          <li> Parsing:  CFG, Lexicalized CFG, PCFGs, Dependency parsing</li>
+          <li>Applications:   Named  Entity  Recognition,  Coreference  Resolution,  text  classification,  toolkits  e.g., Spacy, etc.</li>
+          <li>Distributional Semantics:  distributional hypothesis, vector space models, etc.</li>
+          <li>Distributed Representations: Neural Networks (NN), Backpropogation, Softmax, Hierarchical Softmax</li>
+          <li> Word Vectors:  Feedforward NN, Word2Vec, GloVE, Contextualization (ELMo etc.), Subword information (FastText, etc.)</li>
+          <li>Deep Models:  RNNs, LSTMs, Attention, CNNs, applications in language, etc.</li>
+          <li>Sequence to Sequence models:  machine translation and other applications</li>
+          <li>Transformers:  BERT, transfer learning and applications</li>
+        </ol>
+-->
+        <h4 style="color: orange;"> References: </h4> 
+ There are no specific references, this course gleans information from a variety of sources likebooks, research papers, other courses, etc.  Relevant references would be suggested in the lectures.  Some of the frequent references are as follows:
+
+       <ol>
+          <li> Speech and Language Processing, Daniel Jurafsky, James H.Martin</li>
+          <li>  Foundations of Statistical Natural Language Processing, CH Manning, H Schtze</li>
+          <li> Introduction to Natural Language Processing, Jacob Eisenstein</li>
+          <li>  Natural Language Understanding, James Allen</li>
+        </ol> 
+
+
+<h4 style="color: orange;"> Useful Resources: </h4> 
+     <ol>
+     <li> <a href="https://www.aclweb.org/anthology/">ACL Anthology: Repo for NLP Research Papers</a> </li>
+     <li> <a href="https://github.com/allenai/writing-code-for-nlp-research-emnlp2018/blob/master/writing_code_for_nlp_research.pdf">Writing Code for NLP Research</a></li>
+     <li> <a href="https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf">Deep Learning with PyTorch Book</a> </li>
+     <li> <a href="https://spacy.io/">Spacy NLP Toolkit</a> </li>
+     <li> <a href="http://joschu.net/blog/opinionated-guide-ml-research.html">Guide To ML Research</a> </li>
+     </ol> 
+
+</div>  
+
+<!-- ############################################################################################################### -->
+<!-- Projects -->
+
+<div id="projects" class="tabcontent">
+  <!-- <h3 style="color: orange;">Projects</h3> -->
+<br>  
+<!--  <h4 style="color: green;">Projects list coming up soon</h4> <br> -->
+This is a project oriented course. Participants worked on different NLP research projects. Following is the list of final projects done by the participants. Research done in some of these projects was published in workshops/conferences. <br> <br>
+<!-- *************************************** -->
+ 
+<!-- <h4 style="color: blue;"> Commonsense Validation and Explanation </h4> 
+ <font color="blue"> <b> Commonsense Validation and Explanation </b></font> <br>
+ Sandeep Routray, Soumya Ranjan Dash, Prateek Varshney <br>
+ <a href="https://arxiv.org/abs/2007.10830"> PAPER </a>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ -->
+ <font color="blue"> <b> Commonsense Validation and Explanation </b></font><br>
+Sandeep Routray, Soumya Ranjan Dash, Prateek Varshney <br>
+<a href="https://arxiv.org/abs/2007.10830"><tt><b>PAPER</b></tt></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+ <button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+  <p>In this project, we develop a system for addressing the research problem posed in Task 4 of SemEval 2020, which involves differentiating between natural language statements that confirm to common sense and those that do not. The organizers propose three subtasks - first, selecting between two sentences, the one which is against common sense. Second, identifying the most crucial reason why a statement does not make sense. Third, generating novel reasons for explaining the against common sense statement. Out of the three subtasks, this paper reports the system description of subtask A and subtask B. This paper proposes a model based on transformer neural network architecture for addressing the subtasks. The novelty in work lies in the architecture design, which handles the logical implication of contradicting statements and simultaneous information extraction from both sentences. We use a parallel instance of transformers, which is responsible for a boost in the performance. We achieved an accuracy of 94.8% in subtask A and 89% in subtask B on the test set. </p>
+</div>
+<br>
+<br> 
+<!-- *************************************** -->
+ 
+  <font color="blue"> <b> Sentiment Analysis of Code Mixed Text </b></font><br>
+Ayush Kumar, Harsh Agarwal, Keshav Bansal<br>
+<a href="https://arxiv.org/abs/2007.10819"><tt><b>PAPER</b></tt></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+ <button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+  <p>Sentiment Analysis of code-mixed text has diversified applications in opinion mining ranging from tagging user reviews to identifying social or political sentiments of a sub-population. In this paper, we present an ensemble architecture of convolutional neural net (CNN) and self-attention based LSTM for sentiment analysis of code-mixed tweets. While the CNN component helps in the classification of positive and negative tweets, the self-attention based LSTM, helps in the classification of neutral tweets, because of its ability to identify correct sentiment among multiple sentiment bearing units. We achieved F1 scores of 0.707 (ranked 5th) and 0.725 (ranked 13th) on Hindi-English (Hinglish) and Spanish-English (Spanglish) datasets, respectively. The submissions for Hinglish and Spanglish tasks were made under the usernames ayushk and harsh_6 respectively.  </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->
+
+   <font color="blue"> <b> Modelling Causal Reasoning in Language, Detecting Counterfactuals Application: Financial Document Causality Detection </b></font><br>
+Rohin Garg, Shashank Gupta, Anirudh Anil Ojha<br>
+<a href="https://arxiv.org/abs/2007.10866"><tt><b>PAPER</b></tt></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+ <button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+  <p>This project aims at developing computational models for detecting a class of textual expressions known as counterfactuals and separating them into their constituent elements. Counterfactual statements describe events that have not or could not have occurred and the possible implications of such events. While counterfactual reasoning is natural for humans, understanding these expressions is difficult for artificial agents due to a variety of linguistic subtleties. For this project, we participated in Task 5 of SemEval-2020. Our final submitted approaches were an ensemble of various fine-tuned transformer-based and CNN-based models for the first subtask and a transformer model with dependency tree information for the second subtask. We ranked 4-th and 9-th in the overall leaderboard. We also explored various other approaches that involved the use of classical methods, other neural architectures and the incorporation of different linguistic features.  </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->
+ 
+   <font color="blue"> <b> Detection of Propaganda Techniques in News Articles </b></font><br>
+Paramansh Singh, Siraj Singh Sandhu, Subham Kumar<br>
+<a href="https://arxiv.org/abs/2007.10827"><tt><b>PAPER</b></tt></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+ <button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+  <p>In this project, we develop a system for addressing the research problem posed in SemEval 2020 Task 11: Detection of Propaganda Techniques in News Articles for each of the two subtasks of Span Identification and Technique Classification. We make use of pre-trained BERT language model enhanced with tagging techniques developed for the task of Named Entity Recognition (NER), to develop a system for identifying propaganda spans in the text. For the second subtask, we incorporate contextual features in a pre-trained RoBERTa model for the classification of propaganda techniques. We were ranked 5th in the propaganda technique classification subtask.   </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->
+  
+   <font color="blue"> <b> Emphasis Selection for written text in visual media </b></font><br>
+Rishabh Agarwal, Vipul Singhal, Sahil Dhull<br>
+<a href="https://arxiv.org/abs/2007.10820"><tt><b>PAPER</b></tt></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+ <button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+  <p>In this project, we develop a system for addressing the research problem posed in Task 10 of SemEval-2020: Emphasis Selection For Written Text in Visual Media. We propose an end-to-end model that takes as input the text and corresponding to each word gives the probability of the word to be emphasized. Our results show that transformer-based models are particularly effective in this task. We achieved the best Matchm score (described in section 2.2) of 0.810 and were ranked third on the leaderboard.  </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->
+  
+   <font color="blue"> <b> Memotion Analysis </b></font><br>
+Vishal Keswani, Sakshi Singh, Suryansh Agarwal<br>
+<a href="https://arxiv.org/abs/2007.10822"><tt><b>PAPER</b></tt></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+ <button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+  <p>Social media is abundant in visual and textual information presented together or in isolation. Memes are the most popular form, belonging to the former class. In this project, we develop approaches for the Memotion Analysis problem as posed in SemEval-2020 Task 8. The goal of this task is to classify memes based on their emotional content and sentiment. We leverage techniques from Natural Language Processing (NLP) and Computer Vision (CV) towards the sentiment classification of internet memes (Subtask A). We consider Bimodal (text and image) as well as Unimodal (text-only) techniques in our study ranging from the Naïve Bayes classifier to Transformer-based approaches. Our results show that a text-only approach, a simple Feed Forward Neural Network (FFNN) with Word2vec embeddings as input, performs superior to all the others. We stand first in the Sentiment analysis task with a relative improvement of 63% over the baseline macro-F1 score. Our work is relevant to any task concerned with the combination of different modalities.   </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** --> 
+  
+   <font color="blue"> <b> Multilingual Offensive Language Identification in Social Media </b></font><br>
+Karishma Laud, Jagriti Singh, Randeep Kumar Sahu<br>
+<a href="https://arxiv.org/abs/2007.10877"><tt><b>PAPER</b></tt></a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+ <button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+  <p>In this project, we develop for addressing the research problem posed in SemEval-2020 Shared Task 12 Multilingual Offensive Language Identification in Social Media. We participated in all the three sub-tasks of OffensEval-2020, and our final submissions during the evaluation phase included transformer-based approaches and a soft label-based approach. BERT based fine-tuned models were submitted for each language of sub-task A (offensive tweet identification). RoBERTa based fine-tuned model for sub-task B (automatic categorization of offense types) was submitted. We submitted two models for sub-task C (offense target identification), one using soft labels and the other using BERT based fine-tuned model. Our ranks for sub-task A were Greek-19 out of 37, Turkish-22 out of 46, Danish-26 out of 39, Arabic-39 out of 53, and English-20 out of 85. We achieved a rank of 28 out of 43 for sub-task B. Our best rank for sub-task C was 20 out of 39 using BERT based fine-tuned model.   </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->  
+   
+<font color="blue"> <b> Emotion-Cause Pair Extraction </b></font><br>
+Aaditya Singh, Shreeshail Hingane, Saim Wani<br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>The task of emotion cause extraction (ECE) is aimed at inferring the cause of an emotion expressed through a piece of text. The task assumes that the emotion associated with the text is provided to us. Such an emotion→cause extraction pipeline disregards the inherent dependence between emotions and causes while also limiting the applicability of the model. Recent work in emotion-cause pair extraction (ECPE) (Xia and Ding, 2019) has tried to improve upon this by extracting emotion-cause clause pairs from the document in a 2-step approach—by first extracting emotion and cause clauses and then conducting emotion-cause pairing. However, this overlooks the effect that a cause clause has on the perception of the emotion since clause extraction happens in isolation from the pairing task. Further, it runs the risk of failing to extract potential emotion clauses in the first step of the pipeline—certain clauses do not appear to convey an emotion when seen in isolation from the cause clause. To overcome these drawbacks, we propose an end-to-end emotion-cause pair extraction architecture that infers emotion-cause pairs from documents and takes into account the effect of cause clause on the perceived emotion of the emotion clause. We evaluate our approach on the benchmark emotion cause dataset introduced in (Gui et al., 2016) and show significant performance improvements in the emotion-cause pairing task.    </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->  
+   
+<font color="blue"> <b> Affective Language Modelling and Text Generation </b></font><br>
+Ahsan Barkati, Ishika Singh, Tushar Goswamy<br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>Messages for human conversation are best conveyed by flavouring the sentences with emotionally coloured words. In this project, we aim to integrate the affective sentence generation methodology to the state-of-the-art language generation models. It is intended to develop a model capable of generating affect-driven sentences without losing the grammatical correctness. We propose to incorporate emotion as prior for the probabilistic state-of-the-art sentence generation models such as GPT-2 and BERT. The model will give user the flexibility to control the category and intensity of emotion as well as the subject of the generated text. This is followed by demonstrating an application of the language model for story generation, advertisements and conversational agents for therapy chatbots.  </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->   
+   
+<font color="blue"> <b> Sarcasm Generator Bot </b></font><br>
+Abinav Tripathi, Chitrak Raj Gupta, Sunny Kant<br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>In this project, we generate sarcastic remarks on a topic given by the user as input. Sarcasm is a relatively new innovation in NLP and topic-based sarcasm generation is still an unexplored field. We propose a novel four-step based sarcasm generation approach. Given an input, in the first step, we find the general consensus about the topic by retrieving relevant tweets and reddit articles. In the second step, we extract the key adjectives from the retrieved corpus using adjective clustering. In the third step, we generate a simple sentence containing the topic and the key adjective using a predefined template. Finally, in the fourth step, we use the simple sentence as an input to a customized plug and play model to generate a sarcastic comment.</p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->  
+   
+<font color="blue"> <b> Machine Comprehension Using Commonsense and Script Knowledge </b></font><br>
+Apoorva Singh, Gargi Singh, Yogesh Kumar <br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>The commonsense knowledge problem has been researched on for years but SOTA still lags far behind the human-level performance. This project will address a subdomain of this problem from the sphere of machine comprehension. We intend to experiment with datasets for requisite and compatible data based on commonsense question-answering(QA) and sequential knowledge of events. We will use the same to better performance of ALBERT, XLNet, and RoBERTa on MCScript2.0. Additionally, we will explore the application of commonsense MRC in the domain of cross-lingual QA and story cloze test.</p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->     
+   
+<font color="blue"> <b> Defense against Adversarial Attacks in Text </b></font><br>
+Hunar Preet, Smarth Gupta, Suryateja BV <br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>Textual adversarial attacks is a recent field in NLP which tests the robustness of models. State-of-the-art NLP models fail at simple additions and deletions of characters in the input sentences, calling for a need to defend against such attacks. We generate realistic character level attacks and find ways to overcome them. We designed a suite of experiments to analyze the robustness of BERT-based models and present an analysis of where the models fail. Finally, we use these foundations to focus on a better adversarial attack with higher lexical overlap but with subtle changes in meaning. </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->    
+   
+<font color="blue"> <b> Information Retrieval and Sentence Extraction on Mental Health using Research Domain Criteria </b></font><br>
+Ankit Kumar Singh, Aditya Jain, Nikunj Jha <br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>Research Domain Criteria (RDoC) is a framework that integrates multi-dimensional information for a better understanding of mental disorders. The absence of biomedical literature with annotated RDoC categories (called ”constructs”) limits the full potential of RDoC. It is infeasible to manually analyze every biomedical article for critical insights, thereby explaining the importance of annotating biomedical literature using RDoC constructs. We aim at exploring different classical ml based and neural network based approaches to rank all abstracts and to extract the most relevant sentence for a given construct.  </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->     
+   
+<font color="blue"> <b> Learning from Descriptions: An Approach for Zero-Shot Text Classification </b></font><br>
+Karthikeyan <br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>In this work, we propose a novel learning technique called Learning from Description (LDES) and analyze our approach for the case of zero-shot text classification (ZS-TC). It is worth noting that our approach is a step closer to how humans typically learn – using descriptions in natural languages. We convert text classification (TC) problem into Textual Entailment (TE), Question-Answering (QA), and Masked word prediction (similar to Masked language model (Devlin et al., 2018)) problem and then use the available TE and QA datasets. Our approach can be easily extended to zero-shot image classification using Visual Entailment (VE) (Xie et al., 2018). Further, our approach is orthogonal to existing meta-learning (Vilalta and Drissi, 2002) based techniques – therefore, one can use our method in conjunction with meta-learning based techniques. </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->   
+   
+<font color="blue"> <b> Construction of Knowledge Graph for IIT Kanpur website </b></font><br>
+Vishal Singh, Yash Kumar, Nitesh Trivedi <br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>An unstructured text contains valuable information but retrieving elements of interest from the unstructured text requires crucial NLP techniques to process unstructured text. One such important element is the Knowledge Graph(KG). Most of the modern applications prepare knowledge base using KG and derive hidden insights. We aim to develop KG for the IIT Kanpur website using classical NLP techniques. </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->    
+   
+<font color="blue"> <b> Abstractive Text Summarization </b></font><br>
+Ayush Nagal, Prakhyat Shankes, Navanya Sharma <br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+ <p>Text summarization aims at compressing long documents into a shorter form that conveys the essential parts of the original document. In this work, we apply state of the art abstractive news summarization techniques on Indian news datasets. First, we use a hybrid pointer-generator network. Second, we apply a transformer-based model like BERTSUMABS on the Inshorts news articles. </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->    
+   
+<font color="blue"> <b> Generalized Adversarial Attacks on NLP Models </b></font><br>
+Rahul B S, Manish Kumar Bera, Bhavy Khatri <br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+<p> We consider the problem of devising an adversarial attack scheme that can be applied to any general NLP model. Since the techniques used in vision are not transferable easily into NLP, because of discrete nature, and syntactic/semantic restrictions. In our work, we will generate an aversarial example by doing perturbation in the latent space(of input) and then map perturbed latent representation back into the input space. In solving the problem we develop a decoder for the latent representation, and a perturbation model. </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->
+   
+<font color="blue"> <b> Hindi Dependency Parser </b></font><br>
+Abhishek Jaiswal, Tushar Shandhilya, A.V.D.S.Mahesh<br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+<p> We have built a dependency parser for Hindi with a web-interface and, further demonstrated its cross-lingual usage by applying on Marathi, a language that is low-resourced yet not very different from the former. For our parser, we have applied and tested various techniques ranging from transition-based parser that use SVM as a classifier to deep neural network based parsers which incorporate recent context-based word embeddings like BERT and FastText. We have demonstrated the immediate zero-shot application of such a parser on Marathi and also applied an existing word-embedding alignment method called MUSE to improve the cross-lingual application performance. In the future, we aim to apply these techniques to Bhojpuri, Telugu and Tamil.  </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->
+   
+<font color="blue"> <b> Assessing Humor in Edited News Headlines </b></font><br>
+Mayank Lunayach, Avtansh Tiwari, Kunal Ranjan<br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+<p> Understanding and predicting humor is a semantically challenging task. In a quest to make AI agents more human-like, it becomes essential that they understand the complex social and psychological trait of humor coming very naturally to us. Although some work has been done on proposing methods and datasets for the task, very little work has been done on understanding what makes something funny. A recent work aimed at same, has recently proposed the Humicroedit (Hossain et al., 2019) dataset, which contains edited news headlines graded for funniness, as a step to identify causes of humor. In our work, we solve for the task of regressing funniness and predicting the funnier edited headline by leveraging the recently proposed powerful LM’s and humor heuristics-based features.  </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->
+   
+<font color="blue"> <b> Multi-Modal Emotion recognition and Sentiment Analysis </b></font><br>
+Aryaman Jha, Sachin Sardiwal, Baldip Singh Bijlani<br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+<p> Multi-modal approach in Natural Language Processing is gaining popularity these days. After the release of CMU-MOSEI dataset, a lot of work has been done in Multi-modal emotion and sentiment recognition. Recently, MELD dataset was released which accelerated the research in conversational systems involving emotion recognition. Datasets involving multiparty conversation involves very challenging problems which includes context and speaker-state modeling, emotion shift, and speaker recognition in case of multiple people in a frame. Significant work has been done to solve these problem and models like ConGCN and dRNN models context and speaker state nicely. But no work has been done to include visual modality along with context and speaker state modeling. In this paper, we are trying to solve some of these problems by introducing visual modality and speaker identification in a frame. </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** -->
+   
+<font color="blue"> <b> Secure NLP </b></font><br>
+Ashwani Bhat, Chayan Dhaddha, Prateek Saxena, Anuraag Kansara<br>
+<button type="button" class="collapsible"><tt><b>ABSTRACT</b></tt></button>
+<div class="content">
+<p> In this project, we develop a system for addressing the research problem posed in SemEval-2018 Task 8: Semantic Extraction from Cybersecurity Reports using NLP. The goal is to exploit the power of Natural Language Processing to provide critical and relevant information about malware behind various cyber attacks. For Subtask 1, our method consists of learning embeddings using Bert and then using a Binary classifier. For Subtask 2, we used BertForTokenClassification on top, with the embeddings from Bert. For Subtask 3, word embeddings from Bert were passed onto the classifier alongside the already existing relations. For Subtask 4, separate Bert embeddings were learnt for each Attribute class, which were then passed into a sigmoid classifier to learn the multi-labels. Our technique achieved an F1 score of 85.43 and 35.2 for Subtask 1 and Subtask 2, respectively. </p>
+</div>
+ <br>
+<br> 
+<!-- *************************************** --> 
+ 
+
+</div>  <!-- End of Project Tab --> 
+
+<!-- ###########################################    SCRIPTS    ##################################################  -->
+<!-- ##################################################  -->
+<!-- Tab Java Script -->
+
+<script>
+function pub(evt, type) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(type).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!-- ##################################################  -->
+<!-- Collapsible Java Script -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- ##################################################  -->
+
+</body>
+</html> 
+
+</br> </br> </br> </br>
